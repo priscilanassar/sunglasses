@@ -59,25 +59,56 @@
 
 
                 <article>
-                    
+
                     <h3>manifesto 02</h3>
                     <img src="img/oculos2.png" alt="manifesto02">
                     <p>óculos manifesto 02</p>
                     <p><span class="preco">R$ 429,90</span></p>
                     <del>R$300,00</del>
+                    <button type="button" onclick="comprar('manifesto', 300.00)">Comprar</button>
 
-                    
+
                 </article>
 
                 <article>
+                    <span class="badge">DESCONTO</span>
                     <h3>vert 02</h3>
                     <img src="img/oculos3.png" alt="tenisbadbunny">
                     <p>óculos vert 02</p>
                     <span class="preco">R$ 429,90</span><br>
                     <del>R$ 529,90</del><br>
-                    <span class="badge">DESCONTO</span>
+
                 </article>
             </div>
+
+        </section>
+
+        <section>
+            <h2>Calculadora de Frete</h2>
+
+            <p>Informe o valor da compra e sua região para calcular o frete</p>
+
+            <b>Valor da Compra</b>
+            <input type="number" id="ValorCompra">
+
+            <b>Região de Entrega</b>
+            <select id="regiao">
+                <option value="">Selecione</option>
+                <option value="sudeste">Sudeste</option>
+                <option value="sul">Sudeste</option>
+                <option value="nordeste">Nordeste</option>
+                <option value="centroeste">Centro-Oeste</option>
+            </select>
+
+            <button type="button" onclick="calcularFrete()">Calcular frete</button></br>
+
+            <b>Frete de</b></br>
+            <p id="resultadoFrete"></p>
+
+            </select>
+            
+
+
 
         </section>
 
@@ -119,6 +150,8 @@
             </table>
 
             <br>
+
+
 
 
 
@@ -286,7 +319,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <button type="submit"><i></i> Cadastrar</button>
+                                        <button type="button" onclick="cadastrar()"><i></i> Cadastrar</button>
                                         <button type="reset">Limpar</button>
                                     </div>
                                 </div>
@@ -303,6 +336,9 @@
         &copy; 2026 gentle monster
         <address>contato@gentlemonster.com.br</adress>
     </footer>
+
+    <script src="js/script.js">  </script>
+
 
 </body>
 
