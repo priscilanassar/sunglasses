@@ -29,13 +29,19 @@ function cadastrar() {
         mensagem: mensagem
     }
 
-    console.log(number)
+    // console.log(number)
     console.log(regiao)
     console.log(nome)
     console.log(email)
     console.log(telefone)
     console.log(cliente)
 
+}
+
+function enviarFormulario(event) {
+    event.preventDefault();
+
+    alert("Formulário enviado com sucesso!");
 }
 
 function calcularFrete() {

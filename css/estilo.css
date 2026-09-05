@@ -28,6 +28,7 @@ textarea {
     font-style: normal;
 }
 
+
 img {
     max-width: 100%;
     display: block;
@@ -205,13 +206,13 @@ th {
 }
 
 .badge {
-    padding: 4px 10px;  
+    padding: 4px 10px;
     font-size: 12px;
     font-weight: bold;
     color: #fffefe;
     text-transform: uppercase;
     background-color: #af6666;
-    
+
 }
 
 
@@ -258,6 +259,35 @@ menu section {
     padding: 5px 50px;
     font-weight: bold;
     color: #b3b3b3;
+}
+
+.linha1 {
+    display: flex;
+}
+
+
+.linha1 div {
+    flex: 1;
+}
+
+.linha2 div {
+    flex: 1;
+}
+
+
+
+.radio {
+    display: flex;
+}
+
+.checkboxes {
+    display: flex;
+    gap: 20px;
+}
+
+.caixa {
+    border: 2px solid rgb(23, 116, 0);
+    margin: 10px;
 }
 
 
